@@ -1,0 +1,34 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "packaged json for project",
+  "repository": {
+    "type": "git",
+    "url": "padre-ginos"
+  },
+  "license": "ISC",
+  "author": "harkirt",
+  "type": "commonjs",
+  "main": "src",
+  "scripts": {
+    "build": "vite build",
+    "dev" : "vite",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.(js,jsx,html)\"",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "eslint": "9.9.1",
+    "eslint-config-prettier": "15.9.0",
+    "globals": "3.3.3"
+  }
+}
+
+
+// ESLINT focuses on semantics and prettier is about code formatting 
+// adding browser and node globals will ensure objects like 'window' or 'document' withiut triggering 'undefined'
+//add .configs.recommended applies small set of eslint rules
