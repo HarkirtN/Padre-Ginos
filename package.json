@@ -25,7 +25,7 @@
     "eslint-plugin-react": "^7.37.1",
     "globals": "17.4.0",
     "prettier": "^3.8.1",
-    "vite": "8.0.3"
+    "vite": "^8.0.9"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.65.0",
