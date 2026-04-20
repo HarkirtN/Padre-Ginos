@@ -11,24 +11,25 @@
   "type": "commonjs",
   "main": "src",
   "scripts": {
+    "dev": "vite",
     "build": "vite build",
-    "dev" : "vite",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.(js,jsx,html)\"",
     "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "type": "module",
   "devDependencies": {
+    "@tanstack/router-devtools": "^1.65.0",
+    "@tanstack/router-plugin": "^1.65.0",
+    "eslint-plugin-react": "^7.37.1",
+    "globals": "17.4.0",
     "prettier": "^3.8.1",
-    "eslint": "9.9.1",
-    "eslint-config-prettier": "15.9.0",
-    "globals": "3.3.3"
+    "vite": "8.0.3"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.65.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
-
-
-// ESLINT focuses on semantics and prettier is about code formatting 
-// adding browser and node globals will ensure objects like 'window' or 'document' withiut triggering 'undefined'
-//add .configs.recommended applies small set of eslint rules

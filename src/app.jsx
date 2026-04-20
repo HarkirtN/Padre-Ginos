@@ -1,13 +1,17 @@
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import order from "./order";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { routeTree } from './routeTree.gen';
+
+const router = createRouter({ routeTree })
 
 const App = () => {
   return (
-    <div>
-      <h1> Padre Ginos Pizza </h1>
-    < order />
-    </div>
-  );
+    <StrictMode>
+     <RouterProvider router={ router } />
+    </StrictMode>
+);
+};
 
   // React.createElement("div", {}, [
   //   React.createElement("h1", {}, "Padre Gino's"),
